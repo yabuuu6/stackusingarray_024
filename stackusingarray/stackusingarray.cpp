@@ -15,7 +15,7 @@ public :
 
 	string push (string element) {
 		if (top == 4) {
-			cout << "Stack Full" << end;
+			cout << "Stack Full" << endl;
 			return "";
 		}
 
@@ -47,9 +47,15 @@ public :
 			cout << "\nStack is empty." << endl;
 		}
 		else {
-
+			for (int tmp = top; tmp >= 0; tmp--) {
+				cout << stack_array[tmp] << endl;
+			}
 		}
 	}
-}; 
+};
+
+int main() {
+	program s;
+}
 
 
